@@ -1,10 +1,11 @@
-FROM alpine:3.6
+FROM alpine:3.7
 
 # Install build dependencies
 RUN apk add --no-cache \
 	--update-cache \
 	autoconf \
 	automake \
+	bc \
 	bison \
 	build-base \
 	coreutils \
@@ -15,6 +16,7 @@ RUN apk add --no-cache \
 	git \
 	gmp-dev \
 	libtool \
+	linux-headers \
 	mpc1-dev \
 	mpfr-dev \
 	shadow \
