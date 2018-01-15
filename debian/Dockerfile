@@ -18,7 +18,7 @@ RUN apt-get update && \
                     libmpc-dev \
                     libmpfr-dev \
                     libtool \
-                    linux-headers-generic \
+                    linux-headers-4.9.0-4-amd64 \
                     texinfo \
                     wget && \
 rm -rf /var/lib/apt/lists/*
